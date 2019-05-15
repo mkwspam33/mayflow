@@ -12,8 +12,8 @@
         <description/>
         <ih_action>false</ih_action>
         <internal_name>mayflowaction</internal_name>
-        <label_cache>[{"name":"{{action.one}}","label":"action➛one","type":"action","ref":""},{"name":"{{action.two}}","label":"action➛two","type":"action","ref":""},{"name":"{{action.three}}","label":"action➛three","type":"action","ref":""}]</label_cache>
-        <latest_snapshot>60bada37779533004d4eb5b2681061e3</latest_snapshot>
+        <label_cache>[{"name":"{{action.one}}","label":"action➛one","type":"action","ref":""},{"name":"{{action.two}}","label":"action➛two","type":"action","ref":""},{"name":"{{action.three}}","label":"action➛three","type":"action","ref":""},{"name":"{{action.choice}}","label":"action➛choice","type":"action","ref":""}]</label_cache>
+        <latest_snapshot>789d16b7771133004d4eb5b2681061dc</latest_snapshot>
         <master_snapshot>38ba1e37779533004d4eb5b26810612d</master_snapshot>
         <name>mayflowaction</name>
         <outputs/>
@@ -24,7 +24,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f26a9ef3779533004d4eb5b2681061ca</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>mayflowaction</sys_name>
         <sys_overrides/>
         <sys_package display_value="mayflow" source="sn_mayflow">023adaf3779533004d4eb5b268106154</sys_package>
@@ -32,7 +32,7 @@
         <sys_scope display_value="mayflow">023adaf3779533004d4eb5b268106154</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_f26a9ef3779533004d4eb5b2681061ca</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-05-15 20:58:55</sys_updated_on>
+        <sys_updated_on>2019-05-15 21:11:29</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -55,10 +55,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-05-15 20:58:50</sys_created_on>
         <sys_id>b7aada37779533004d4eb5b26810612f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-05-15 20:58:50</sys_updated_on>
+        <sys_updated_on>2019-05-15 21:11:21</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b7aada37779533004d4eb5b26810612f"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -83,13 +83,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-05-15 20:58:51</sys_created_on>
         <sys_id>c0bada37779533004d4eb5b268106170</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-05-15 20:58:51</sys_updated_on>
+        <sys_updated_on>2019-05-15 21:11:21</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 outputs.one = inputs.one;
   outputs.two = inputs.two;
   outputs.three = inputs.three;
+  outputs.choice = inputs.choice;
 })(inputs, outputs);
 </value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -106,6 +107,18 @@ outputs.one = inputs.one;
         <sys_updated_on>2019-05-15 20:58:51</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
         <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>chch</field>
+        <id>b7aada37779533004d4eb5b26810612f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-15 21:11:21</sys_created_on>
+        <sys_id>538d16b7771133004d4eb5b268106111</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-15 21:11:21</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_b7aada37779533004d4eb5b26810612f</table>
+        <value>{{action.choice}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>one</field>
@@ -155,7 +168,88 @@ outputs.one = inputs.one;
         <table>var__m_sys_hub_step_ext_input_b7aada37779533004d4eb5b26810612f</table>
         <value>{{action.two}}</value>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=b7aada37779533004d4eb5b26810612f^sys_idNOT INb7aada37779533004d4eb5b268106134,b7aada37779533004d4eb5b268106139,f7aada37779533004d4eb5b268106156"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=b7aada37779533004d4eb5b26810612f^sys_idNOT IN8b8dd2b7771133004d4eb5b2681061fe,b7aada37779533004d4eb5b268106134,b7aada37779533004d4eb5b268106139,f7aada37779533004d4eb5b268106156"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>chch</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">b7aada37779533004d4eb5b26810612f</model>
+        <model_id>b7aada37779533004d4eb5b26810612f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_b7aada37779533004d4eb5b26810612f</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-15 21:11:21</sys_created_on>
+        <sys_id>8b8dd2b7771133004d4eb5b2681061fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="mayflow">023adaf3779533004d4eb5b268106154</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-15 21:11:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -399,7 +493,7 @@ outputs.one = inputs.one;
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=b7aada37779533004d4eb5b26810612f^sys_idNOT IN04bada37779533004d4eb5b268106161,08bada37779533004d4eb5b268106166,c0bada37779533004d4eb5b26810615b"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=b7aada37779533004d4eb5b26810612f^sys_idNOT IN04bada37779533004d4eb5b268106161,08bada37779533004d4eb5b268106166,978d16b7771133004d4eb5b268106107,c0bada37779533004d4eb5b26810615b"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -590,6 +684,87 @@ outputs.one = inputs.one;
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
+        <element>choice</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>choice</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Script step">b7aada37779533004d4eb5b26810612f</model>
+        <model_id>b7aada37779533004d4eb5b26810612f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_b7aada37779533004d4eb5b26810612f</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-15 21:11:21</sys_created_on>
+        <sys_id>978d16b7771133004d4eb5b268106107</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="mayflow">023adaf3779533004d4eb5b268106154</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-15 21:11:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
         <element>one</element>
         <element_reference>false</element_reference>
         <foreign_database/>
@@ -643,7 +818,88 @@ outputs.one = inputs.one;
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_action_input action="delete_multiple" query="model=f26a9ef3779533004d4eb5b2681061ca^sys_idNOT IN7baa1a37779533004d4eb5b2681061ce,7faada37779533004d4eb5b268106128,b3aa1a37779533004d4eb5b2681061c6"/>
+    <sys_hub_action_input action="delete_multiple" query="model=f26a9ef3779533004d4eb5b2681061ca^sys_idNOT IN438d92b7771133004d4eb5b2681061b5,7baa1a37779533004d4eb5b2681061ce,7faada37779533004d4eb5b268106128,b3aa1a37779533004d4eb5b2681061c6"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>one</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>choice</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>choice</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="mayflowaction">f26a9ef3779533004d4eb5b2681061ca</model>
+        <model_id>f26a9ef3779533004d4eb5b2681061ca</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_f26a9ef3779533004d4eb5b2681061ca</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-15 21:11:21</sys_created_on>
+        <sys_id>438d92b7771133004d4eb5b2681061b5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="mayflow">023adaf3779533004d4eb5b268106154</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-15 21:11:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -904,10 +1160,10 @@ outputs.one = inputs.one;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-05-15 20:58:50</sys_created_on>
         <sys_id>b7aada37779533004d4eb5b26810612f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-05-15 20:58:50</sys_updated_on>
+        <sys_updated_on>2019-05-15 21:11:21</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b7aada37779533004d4eb5b26810612f"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -932,13 +1188,14 @@ outputs.one = inputs.one;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-05-15 20:58:51</sys_created_on>
         <sys_id>c0bada37779533004d4eb5b268106170</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-05-15 20:58:51</sys_updated_on>
+        <sys_updated_on>2019-05-15 21:11:21</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 outputs.one = inputs.one;
   outputs.two = inputs.two;
   outputs.three = inputs.three;
+  outputs.choice = inputs.choice;
 })(inputs, outputs);
 </value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -955,6 +1212,18 @@ outputs.one = inputs.one;
         <sys_updated_on>2019-05-15 20:58:51</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
         <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>chch</field>
+        <id>b7aada37779533004d4eb5b26810612f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-15 21:11:21</sys_created_on>
+        <sys_id>538d16b7771133004d4eb5b268106111</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-15 21:11:21</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_b7aada37779533004d4eb5b26810612f</table>
+        <value>{{action.choice}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>one</field>
@@ -1004,7 +1273,88 @@ outputs.one = inputs.one;
         <table>var__m_sys_hub_step_ext_input_b7aada37779533004d4eb5b26810612f</table>
         <value>{{action.two}}</value>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=b7aada37779533004d4eb5b26810612f^sys_idNOT INb7aada37779533004d4eb5b268106134,b7aada37779533004d4eb5b268106139,f7aada37779533004d4eb5b268106156"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=b7aada37779533004d4eb5b26810612f^sys_idNOT IN8b8dd2b7771133004d4eb5b2681061fe,b7aada37779533004d4eb5b268106134,b7aada37779533004d4eb5b268106139,f7aada37779533004d4eb5b268106156"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>chch</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">b7aada37779533004d4eb5b26810612f</model>
+        <model_id>b7aada37779533004d4eb5b26810612f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_b7aada37779533004d4eb5b26810612f</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-15 21:11:21</sys_created_on>
+        <sys_id>8b8dd2b7771133004d4eb5b2681061fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="mayflow">023adaf3779533004d4eb5b268106154</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-15 21:11:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1248,7 +1598,7 @@ outputs.one = inputs.one;
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=b7aada37779533004d4eb5b26810612f^sys_idNOT IN04bada37779533004d4eb5b268106161,08bada37779533004d4eb5b268106166,c0bada37779533004d4eb5b26810615b"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=b7aada37779533004d4eb5b26810612f^sys_idNOT IN04bada37779533004d4eb5b268106161,08bada37779533004d4eb5b268106166,978d16b7771133004d4eb5b268106107,c0bada37779533004d4eb5b26810615b"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1439,6 +1789,87 @@ outputs.one = inputs.one;
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
+        <element>choice</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>choice</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Script step">b7aada37779533004d4eb5b26810612f</model>
+        <model_id>b7aada37779533004d4eb5b26810612f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_b7aada37779533004d4eb5b26810612f</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-15 21:11:21</sys_created_on>
+        <sys_id>978d16b7771133004d4eb5b268106107</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="mayflow">023adaf3779533004d4eb5b268106154</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-15 21:11:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
         <element>one</element>
         <element_reference>false</element_reference>
         <foreign_database/>
@@ -1492,7 +1923,7 @@ outputs.one = inputs.one;
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_f26a9ef3779533004d4eb5b2681061ca^sys_idNOT IN7baa1a37779533004d4eb5b2681061cd,b3aada37779533004d4eb5b26810612d,bfaada37779533004d4eb5b268106127"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_f26a9ef3779533004d4eb5b2681061ca^sys_idNOT IN7baa1a37779533004d4eb5b2681061cd,878dd2b7771133004d4eb5b2681061f5,b3aada37779533004d4eb5b26810612d,bfaada37779533004d4eb5b268106127"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>one</element>
         <help/>
@@ -1513,6 +1944,29 @@ outputs.one = inputs.one;
         <sys_update_name>sys_documentation_var__m_sys_hub_action_input_f26a9ef3779533004d4eb5b2681061ca_one_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2019-05-15 20:58:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>choice</element>
+        <help/>
+        <hint/>
+        <label>choice</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_f26a9ef3779533004d4eb5b2681061ca</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-15 21:11:21</sys_created_on>
+        <sys_id>878dd2b7771133004d4eb5b2681061f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>choice</sys_name>
+        <sys_package display_value="mayflow" source="sn_mayflow">023adaf3779533004d4eb5b268106154</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="mayflow">023adaf3779533004d4eb5b268106154</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_f26a9ef3779533004d4eb5b2681061ca_choice_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-15 21:11:21</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -1562,21 +2016,81 @@ outputs.one = inputs.one;
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_f26a9ef3779533004d4eb5b2681061ca^sys_idNOT IN8b8d92b7771133004d4eb5b2681061b8,078dd2b7771133004d4eb5b2681061f0,cf8dd2b7771133004d4eb5b2681061f0"/>
+    <sys_choice field="choice" table="var__m_sys_hub_action_input_f26a9ef3779533004d4eb5b2681061ca">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>choice</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Label1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_f26a9ef3779533004d4eb5b2681061ca</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-05-15 21:11:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8b8d92b7771133004d4eb5b2681061b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-05-15 21:11:21</sys_updated_on>
+            <value>one</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>choice</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Label2</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_f26a9ef3779533004d4eb5b2681061ca</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-05-15 21:11:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>078dd2b7771133004d4eb5b2681061f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-05-15 21:11:21</sys_updated_on>
+            <value>two</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>choice</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Label3</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_f26a9ef3779533004d4eb5b2681061ca</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-05-15 21:11:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cf8dd2b7771133004d4eb5b2681061f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-05-15 21:11:21</sys_updated_on>
+            <value>three</value>
+        </sys_choice>
+    </sys_choice>
     <sys_hub_action_plan action="delete_multiple" query="action_id=f26a9ef3779533004d4eb5b2681061ca^sys_idNOT INd1ba1e37779533004d4eb5b26810619d"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="mayflowaction">f26a9ef3779533004d4eb5b2681061ca</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"d1ba1e37779533004d4eb5b26810619d","name":"plan"}}</plan>
-        <snapshot>60bada37779533004d4eb5b2681061e3</snapshot>
+        <snapshot>789d16b7771133004d4eb5b2681061dc</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-05-15 20:58:56</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d1ba1e37779533004d4eb5b26810619d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-05-15 20:58:56</sys_updated_on>
+        <sys_updated_on>2019-05-15 21:11:31</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1589,7 +2103,7 @@ outputs.one = inputs.one;
         <copied_from_name/>
         <description/>
         <internal_name>mayflowaction</internal_name>
-        <label_cache>[{"name":"{{action.one}}","label":"action➛one","type":"action","ref":""},{"name":"{{action.two}}","label":"action➛two","type":"action","ref":""},{"name":"{{action.three}}","label":"action➛three","type":"action","ref":""}]</label_cache>
+        <label_cache>[{"name":"{{action.one}}","label":"action➛one","type":"action","ref":""},{"name":"{{action.two}}","label":"action➛two","type":"action","ref":""},{"name":"{{action.three}}","label":"action➛three","type":"action","ref":""},{"name":"{{action.choice}}","label":"action➛choice","type":"action","ref":""}]</label_cache>
         <master>true</master>
         <name>mayflowaction</name>
         <outputs/>
@@ -1600,7 +2114,7 @@ outputs.one = inputs.one;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>38ba1e37779533004d4eb5b26810612d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1608,7 +2122,7 @@ outputs.one = inputs.one;
         <sys_scope display_value="mayflow">023adaf3779533004d4eb5b268106154</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-05-15 20:58:54</sys_updated_on>
+        <sys_updated_on>2019-05-15 21:11:29</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -1631,10 +2145,10 @@ outputs.one = inputs.one;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-05-15 20:58:54</sys_created_on>
         <sys_id>3cba1e37779533004d4eb5b26810613f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-05-15 20:58:55</sys_updated_on>
+        <sys_updated_on>2019-05-15 21:11:29</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3cba1e37779533004d4eb5b26810613f"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1645,13 +2159,14 @@ outputs.one = inputs.one;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-05-15 20:58:55</sys_created_on>
         <sys_id>41ba1e37779533004d4eb5b268106166</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-05-15 20:58:55</sys_updated_on>
+        <sys_updated_on>2019-05-15 21:11:29</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 outputs.one = inputs.one;
   outputs.two = inputs.two;
   outputs.three = inputs.three;
+  outputs.choice = inputs.choice;
 })(inputs, outputs);
 </value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -1682,6 +2197,18 @@ outputs.one = inputs.one;
         <sys_updated_on>2019-05-15 20:58:55</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
         <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>chch</field>
+        <id>3cba1e37779533004d4eb5b26810613f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-15 21:11:29</sys_created_on>
+        <sys_id>c19d56b7771133004d4eb5b268106167</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-15 21:11:29</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_3cba1e37779533004d4eb5b26810613f</table>
+        <value>{{action.choice}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>one</field>
@@ -1731,7 +2258,7 @@ outputs.one = inputs.one;
         <table>var__m_sys_hub_step_ext_input_3cba1e37779533004d4eb5b26810613f</table>
         <value>{{action.two}}</value>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=3cba1e37779533004d4eb5b26810613f^sys_idNOT IN38ba1e37779533004d4eb5b268106142,b0ba1e37779533004d4eb5b268106148,b4ba1e37779533004d4eb5b26810614d"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=3cba1e37779533004d4eb5b26810613f^sys_idNOT IN38ba1e37779533004d4eb5b268106142,b0ba1e37779533004d4eb5b268106148,b4ba1e37779533004d4eb5b26810614d,c99d56b7771133004d4eb5b268106156"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1975,7 +2502,88 @@ outputs.one = inputs.one;
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=3cba1e37779533004d4eb5b26810613f^sys_idNOT IN81ba1e37779533004d4eb5b268106153,c9ba1e37779533004d4eb5b268106158,cdba1e37779533004d4eb5b26810615d"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>chch</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>chch</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">3cba1e37779533004d4eb5b26810613f</model>
+        <model_id>3cba1e37779533004d4eb5b26810613f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_3cba1e37779533004d4eb5b26810613f</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-15 21:11:29</sys_created_on>
+        <sys_id>c99d56b7771133004d4eb5b268106156</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="mayflow">023adaf3779533004d4eb5b268106154</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-15 21:11:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=3cba1e37779533004d4eb5b26810613f^sys_idNOT IN81ba1e37779533004d4eb5b268106153,c59d56b7771133004d4eb5b26810615f,c9ba1e37779533004d4eb5b268106158,cdba1e37779533004d4eb5b26810615d"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2046,6 +2654,87 @@ outputs.one = inputs.one;
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2019-05-15 20:58:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>choice</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>choice</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Script step">3cba1e37779533004d4eb5b26810613f</model>
+        <model_id>3cba1e37779533004d4eb5b26810613f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_3cba1e37779533004d4eb5b26810613f</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-15 21:11:29</sys_created_on>
+        <sys_id>c59d56b7771133004d4eb5b26810615f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="mayflow">023adaf3779533004d4eb5b268106154</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-15 21:11:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2219,7 +2908,88 @@ outputs.one = inputs.one;
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_action_input action="delete_multiple" query="model=38ba1e37779533004d4eb5b26810612d^sys_idNOT INb0ba1e37779533004d4eb5b268106134,b4ba1e37779533004d4eb5b268106139,f4ba1e37779533004d4eb5b26810612e"/>
+    <sys_hub_action_input action="delete_multiple" query="model=38ba1e37779533004d4eb5b26810612d^sys_idNOT IN8d9d56b7771133004d4eb5b268106144,b0ba1e37779533004d4eb5b268106134,b4ba1e37779533004d4eb5b268106139,f4ba1e37779533004d4eb5b26810612e"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>one</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>choice</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>choice</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="mayflowaction">38ba1e37779533004d4eb5b26810612d</model>
+        <model_id>38ba1e37779533004d4eb5b26810612d</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_38ba1e37779533004d4eb5b26810612d</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-15 21:11:29</sys_created_on>
+        <sys_id>8d9d56b7771133004d4eb5b268106144</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="mayflow">023adaf3779533004d4eb5b268106154</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-15 21:11:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2480,10 +3250,10 @@ outputs.one = inputs.one;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-05-15 20:58:54</sys_created_on>
         <sys_id>3cba1e37779533004d4eb5b26810613f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-05-15 20:58:55</sys_updated_on>
+        <sys_updated_on>2019-05-15 21:11:29</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3cba1e37779533004d4eb5b26810613f"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2494,13 +3264,14 @@ outputs.one = inputs.one;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-05-15 20:58:55</sys_created_on>
         <sys_id>41ba1e37779533004d4eb5b268106166</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-05-15 20:58:55</sys_updated_on>
+        <sys_updated_on>2019-05-15 21:11:29</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 outputs.one = inputs.one;
   outputs.two = inputs.two;
   outputs.three = inputs.three;
+  outputs.choice = inputs.choice;
 })(inputs, outputs);
 </value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -2531,6 +3302,18 @@ outputs.one = inputs.one;
         <sys_updated_on>2019-05-15 20:58:55</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
         <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>chch</field>
+        <id>3cba1e37779533004d4eb5b26810613f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-15 21:11:29</sys_created_on>
+        <sys_id>c19d56b7771133004d4eb5b268106167</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-15 21:11:29</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_3cba1e37779533004d4eb5b26810613f</table>
+        <value>{{action.choice}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>one</field>
@@ -2580,7 +3363,7 @@ outputs.one = inputs.one;
         <table>var__m_sys_hub_step_ext_input_3cba1e37779533004d4eb5b26810613f</table>
         <value>{{action.two}}</value>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=3cba1e37779533004d4eb5b26810613f^sys_idNOT IN38ba1e37779533004d4eb5b268106142,b0ba1e37779533004d4eb5b268106148,b4ba1e37779533004d4eb5b26810614d"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=3cba1e37779533004d4eb5b26810613f^sys_idNOT IN38ba1e37779533004d4eb5b268106142,b0ba1e37779533004d4eb5b268106148,b4ba1e37779533004d4eb5b26810614d,c99d56b7771133004d4eb5b268106156"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2824,7 +3607,88 @@ outputs.one = inputs.one;
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_input>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=3cba1e37779533004d4eb5b26810613f^sys_idNOT IN81ba1e37779533004d4eb5b268106153,c9ba1e37779533004d4eb5b268106158,cdba1e37779533004d4eb5b26810615d"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>chch</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>chch</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">3cba1e37779533004d4eb5b26810613f</model>
+        <model_id>3cba1e37779533004d4eb5b26810613f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_3cba1e37779533004d4eb5b26810613f</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-15 21:11:29</sys_created_on>
+        <sys_id>c99d56b7771133004d4eb5b268106156</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="mayflow">023adaf3779533004d4eb5b268106154</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-15 21:11:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=3cba1e37779533004d4eb5b26810613f^sys_idNOT IN81ba1e37779533004d4eb5b268106153,c59d56b7771133004d4eb5b26810615f,c9ba1e37779533004d4eb5b268106158,cdba1e37779533004d4eb5b26810615d"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2895,6 +3759,87 @@ outputs.one = inputs.one;
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2019-05-15 20:58:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>choice</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>choice</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Script step">3cba1e37779533004d4eb5b26810613f</model>
+        <model_id>3cba1e37779533004d4eb5b26810613f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_3cba1e37779533004d4eb5b26810613f</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-15 21:11:29</sys_created_on>
+        <sys_id>c59d56b7771133004d4eb5b26810615f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="mayflow">023adaf3779533004d4eb5b268106154</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-15 21:11:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3068,7 +4013,30 @@ outputs.one = inputs.one;
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_38ba1e37779533004d4eb5b26810612d^sys_idNOT INf0ba1e37779533004d4eb5b268106133,f4ba1e37779533004d4eb5b268106138,f8ba1e37779533004d4eb5b26810613d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_38ba1e37779533004d4eb5b26810612d^sys_idNOT IN459d56b7771133004d4eb5b26810614d,f0ba1e37779533004d4eb5b268106133,f4ba1e37779533004d4eb5b268106138,f8ba1e37779533004d4eb5b26810613d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>choice</element>
+        <help/>
+        <hint/>
+        <label>choice</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_38ba1e37779533004d4eb5b26810612d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-15 21:11:29</sys_created_on>
+        <sys_id>459d56b7771133004d4eb5b26810614d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>choice</sys_name>
+        <sys_package display_value="mayflow" source="sn_mayflow">023adaf3779533004d4eb5b268106154</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="mayflow">023adaf3779533004d4eb5b268106154</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_38ba1e37779533004d4eb5b26810612d_choice_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-15 21:11:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>one</element>
         <help/>
@@ -3138,4 +4106,64 @@ outputs.one = inputs.one;
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_38ba1e37779533004d4eb5b26810612d^sys_idNOT IN4d9d56b7771133004d4eb5b268106147,099d56b7771133004d4eb5b268106148,c19d56b7771133004d4eb5b268106149"/>
+    <sys_choice field="choice" table="var__m_sys_hub_action_input_38ba1e37779533004d4eb5b26810612d">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>choice</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Label1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_38ba1e37779533004d4eb5b26810612d</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-05-15 21:11:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4d9d56b7771133004d4eb5b268106147</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-05-15 21:11:29</sys_updated_on>
+            <value>one</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>choice</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Label2</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_38ba1e37779533004d4eb5b26810612d</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-05-15 21:11:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>099d56b7771133004d4eb5b268106148</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-05-15 21:11:29</sys_updated_on>
+            <value>two</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>choice</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Label3</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_38ba1e37779533004d4eb5b26810612d</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-05-15 21:11:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c19d56b7771133004d4eb5b268106149</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-05-15 21:11:29</sys_updated_on>
+            <value>three</value>
+        </sys_choice>
+    </sys_choice>
 </record_update>
